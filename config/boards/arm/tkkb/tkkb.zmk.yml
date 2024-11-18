@@ -1,0 +1,11 @@
+file_format: '1'
+id: tkkb
+name: tkkb
+type: board
+url: https://github.com/thomiczecks
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+  - ble
