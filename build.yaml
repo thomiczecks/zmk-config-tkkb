@@ -19,3 +19,4 @@
 ---
 include:
   - board: tkkb
+    snippet: nrf52840-nosd
