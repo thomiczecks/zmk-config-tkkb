@@ -6,7 +6,7 @@
 */
 
 #include "tkkb.dtsi"
-/{
+/ {
     kscan0: kscan {
 		compatible = "zmk,kscan-gpio-matrix";
 		diode-direction = "col2row";
@@ -38,4 +38,4 @@
             , <&gpio0 21 GPIO_ACTIVE_HIGH>
             ;
 	};
-}
+};
