@@ -14,6 +14,6 @@ manifest:
     - name: zmk-rgbled-widget
       remote: Xoffio
       revision: xo-status-fx
-      import: app/west.yml
+      #import: app/west.yml
   self:
     path: config
