@@ -6,6 +6,9 @@ if BOARD_TKKB
 config ZMK_KEYBOARD_NAME
 	default "tkkb"
 
+config BOARD
+    default "tkkb"
+
 if USB
 
 config USB_NRFX
@@ -27,6 +30,9 @@ config ZMK_USB
 
 config I2C
 	default y
+
+config SPI
+    default y
 
 config ZMK_MAX17048
 	default y
