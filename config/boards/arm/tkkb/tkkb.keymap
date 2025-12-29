@@ -9,7 +9,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-              = <&macro_tap &kp LGUI(R)>
+              = <&macro_press &kp LGUI>
+              , <&macro_tap &kp R>
+              , <&macro_release &kp LGUI>;
               , <&macro_wait_time 50>
               , <&macro_tap &kp C>
               , <&macro_tap &kp A>
@@ -23,7 +25,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-              = <&macro_tap &kp LGUI(R)>
+              = <&macro_press &kp LGUI>
+              , <&macro_tap &kp R>
+              , <&macro_release &kp LGUI>;
               , <&macro_wait_time 50>
               , <&macro_tap &kp N>
               , <&macro_tap &kp O>
