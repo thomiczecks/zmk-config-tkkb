@@ -11,7 +11,7 @@
             bindings
               = <&macro_press &kp LGUI>
               , <&macro_tap &kp R>
-              , <&macro_release &kp LGUI>;
+              , <&macro_release &kp LGUI>
               , <&macro_wait_time 50>
               , <&macro_tap &kp C>
               , <&macro_tap &kp A>
@@ -27,7 +27,7 @@
             bindings
               = <&macro_press &kp LGUI>
               , <&macro_tap &kp R>
-              , <&macro_release &kp LGUI>;
+              , <&macro_release &kp LGUI>
               , <&macro_wait_time 50>
               , <&macro_tap &kp N>
               , <&macro_tap &kp O>
