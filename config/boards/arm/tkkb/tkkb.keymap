@@ -10,12 +10,12 @@
             #binding-cells = <0>;
             bindings
               = <&macro_tap &kp LGUI &kp R>
-              , <&macro_wait 150>
+              , <&macro_wait_time 200>
               , <&macro_tap &kp C>
               , <&macro_tap &kp A>
               , <&macro_tap &kp L>
               , <&macro_tap &kp C>
-              , <&macro_wait 100>
+              , <&macro_wait_time 200>
               , <&macro_tap &kp ENTER>
               ;
         };
