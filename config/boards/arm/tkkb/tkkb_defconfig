@@ -37,7 +37,7 @@ CONFIG_FLASH_PAGE_LAYOUT=y
 CONFIG_FLASH_MAP=y
 
 # Windows Battery Reporting Fix
-CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n
+CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=y
 
 # Enable experimental BLE features to improve stability
 CONFIG_ZMK_BLE=y
