@@ -5,7 +5,6 @@
 
 / {
   macros {
-        // Macro to launch Calculator on Windows
         launch_calc: launch_calc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -14,7 +13,7 @@
             bindings
                 = <&kp LG(R)>
                 , <&macro_wait_time 200>
-                , <&kp C &kp A &kp L &kp C &kp DOT &kp E &kp X &kp E>
+                , <&kp C &kp A &kp L &kp C>
                 , <&kp RET>
                 ;
         };
@@ -26,7 +25,7 @@
             bindings
                 = <&kp LG(R)>
                 , <&macro_wait_time 200>
-                , <&kp N &kp O &kp T &kp E &kp P &kp A &kp D &kp DOT &kp E &kp X &kp E>
+                , <&kp N &kp O &kp T &kp E &kp P &kp A &kp D>
                 , <&kp RET>
                 ;
         };
@@ -66,7 +65,7 @@
         &trans   &trans  &trans  &launch_notepad  &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans &trans         &trans  &kp C_VOL_DOWN
         &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans                &trans  &kp C_MUTE
         &trans &trans   &trans  &trans  &launch_calc  &trans   &bootloader  &sys_reset  &trans  &trans   &trans  &trans  &trans         &trans  &kp C_PP
-        &trans &trans   &trans                &trans                   &trans  &trans                     &bt BT_PRV     &bt BT_CLR  &bt BT_NXT
+        &trans &trans   &trans                &trans                   &trans  &trans                     &bt BT_PRV     &bt BT_CLR_ALL  &bt BT_NXT
       >;
         };
     };
