@@ -5,17 +5,34 @@
 
 / {
   macros {
-        calc_macro: calc_macro {
+        macro_calc: macro_calc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
               = <&macro_tap &kp LGUI &kp R>
-              , <&macro_wait_time 200>
+              , <&macro_wait_time 50>
               , <&macro_tap &kp C>
               , <&macro_tap &kp A>
               , <&macro_tap &kp L>
               , <&macro_tap &kp C>
-              , <&macro_wait_time 200>
+              , <&macro_wait_time 50>
+              , <&macro_tap &kp ENTER>
+              ;
+        };
+        macro_notepad: macro_notepad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+              = <&macro_tap &kp LGUI &kp R>
+              , <&macro_wait_time 50>
+              , <&macro_tap &kp N>
+              , <&macro_tap &kp O>
+              , <&macro_tap &kp T>
+              , <&macro_tap &kp E>
+              , <&macro_tap &kp P>
+              , <&macro_tap &kp A>
+              , <&macro_tap &kp D>
+              , <&macro_wait_time 50>
               , <&macro_tap &kp ENTER>
               ;
         };
@@ -52,9 +69,9 @@
         // ------------------------------------------------------------------------------------------------
       bindings = <
         &kp GRAVE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8  &kp F9  &kp F10 &kp F11 &kp F12               &trans          &kp C_VOLUME_UP
-        &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans &trans         &trans          &kp C_VOLUME_DOWN
+        &trans   &trans  &trans  &macro_notepad  &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans &trans         &trans          &kp C_VOLUME_DOWN
         &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans                &trans          &kp C_MUTE
-        &trans &trans   &trans  &trans  &calc_macro  &trans   &bootloader  &sys_reset  &trans  &trans   &trans  &trans  &trans         &trans          &kp C_PLAY_PAUSE
+        &trans &trans   &trans  &trans  &macro_calc  &trans   &bootloader  &sys_reset  &trans  &trans   &trans  &trans  &trans         &trans          &kp C_PLAY_PAUSE
         &trans &trans   &trans                &trans                   &trans  &trans                     &bt BT_PRV     &bt BT_CLR_ALL  &bt BT_NXT
       >;
         };
