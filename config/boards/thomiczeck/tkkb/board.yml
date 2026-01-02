@@ -1,7 +1,5 @@
 board:
   name: tkkb
   vendor: thomiczeck
-  revision:
-    format: 1.0.0
   socs:
   - name: nrf52840
