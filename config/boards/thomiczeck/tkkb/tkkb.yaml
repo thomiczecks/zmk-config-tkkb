@@ -1,5 +1,5 @@
 identifier: tkkb
-name: thomiczecks keyboard
+name: tkkb
 type: mcu
 arch: arm
 toolchain:
