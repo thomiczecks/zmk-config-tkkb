@@ -110,10 +110,11 @@ zephyr_udc0: &usbd {
 	pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
-	clock-frequency = <100000>;
+	// clock-frequency = <100000>;
 
 	fuelgauge: max17048@36 {
 		compatible = "zmk,maxim-max17048";
+        status = "okay";
 		reg = <0x36>;
 	};
 };
