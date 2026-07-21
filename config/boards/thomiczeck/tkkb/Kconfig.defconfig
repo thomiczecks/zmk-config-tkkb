@@ -19,4 +19,7 @@ endif # USB
 config BT_CTLR
     default BT
 
+config ZMK_MAX17048
+	default y
+
 endif # BOARD_TKKB
